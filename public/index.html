@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC Demo</title>
+</head>
+<body>
+
+    <h1>WebRTC Signaling Server Running</h1>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+        const socket = io();
+
+        socket.on("connect", () => {
+            console.log(
+                "Connected:",
+                socket.id
+            );
+        });
+    </script>
+
+</body>
+</html>
